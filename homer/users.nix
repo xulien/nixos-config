@@ -9,6 +9,7 @@
             firefox
             kate
             kmail
+            ark
             akregator
             korganizer
             vlc
