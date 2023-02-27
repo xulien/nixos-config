@@ -18,7 +18,7 @@
             };
         };
     in {
-        nixosConfigurations."homer-desktop" = nixpkgs.lib.nixosSystem {
+        nixosConfigurations."homer" = nixpkgs.lib.nixosSystem {
             inherit system;
             modules = [
                 ({ config, pkgs, ... }: { nixpkgs.overlays = [ overlay-unstable ]; }) # Overlays-module makes "pkgs.unstable" available in configuration.nix
@@ -28,6 +28,8 @@
                 ./homer/network.nix
                 ./homer/keymap.nix
                 ./homer/users.nix
+                ./homer/printing.nix
+                ./homer/minecraft.nix
                 ./homer/services.nix
                 ./homer/programs.nix
                 ./inputrc.nix
@@ -41,7 +43,7 @@
                 }
             ];
         };
-        nixosConfigurations."marge-desktop" = nixpkgs.lib.nixosSystem {
+        nixosConfigurations."marge" = nixpkgs.lib.nixosSystem {
             inherit system;
             modules = [
                 ({ config, pkgs, ... }: { nixpkgs.overlays = [ overlay-unstable ]; }) # Overlays-module makes "pkgs.unstable" available in configuration.nix
