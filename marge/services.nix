@@ -5,6 +5,7 @@
         openssh.enable = true;
         xserver = {
             enable = true;
+            videoDrivers = [ "nvidia" ];
             layout = "fr";
             xkbVariant = "";
             libinput.enable = true; # Enable touchpad support (enabled default in most desktopManager).

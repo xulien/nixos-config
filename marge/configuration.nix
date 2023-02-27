@@ -12,6 +12,8 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  hardware.opengl.enable = true;
+
   time.timeZone = "Europe/Paris";
   nixpkgs.config.allowUnfree = true;
 
