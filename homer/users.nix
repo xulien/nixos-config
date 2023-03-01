@@ -5,24 +5,5 @@
         isNormalUser = true;
         description = "jules";
         extraGroups = [ "networkmanager" "wheel" "scanner" "lp"];
-        packages = with pkgs; [
-            firefox
-            kate
-            kmail
-            ark
-            akregator
-            korganizer
-            vlc
-            libreoffice
-            yakuake
-            skanlite
-            kcalc
-            gimp
-            htop
-            neovim
-            unstable.jetbrains.clion
-            unstable.jetbrains.datagrip
-            unstable.yt-dlp
-        ];
     };
 }

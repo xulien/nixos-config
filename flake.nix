@@ -28,18 +28,24 @@
                 ./homer/network.nix
                 ./homer/keymap.nix
                 ./homer/users.nix
-                ./homer/printing.nix
-                ./homer/minecraft.nix
-                ./homer/services.nix
-                ./homer/programs.nix
+                ./homer/video-driver.nix
+                ./xserver.nix
+                ./printing.nix
+                ./minecraft.nix
+                ./ssh.nix
+                ./kde.nix
+                ./gnome.nix
+                ./avahi.nix
+		        ./neovim.nix
                 ./inputrc.nix
                 ./locales.nix
                 ./sane.nix
                 ./sound.nix
+                ./steam.nix
                 home-manager.nixosModules.home-manager {
                     home-manager.useGlobalPkgs = true;
                     home-manager.useUserPackages = true;
-                    home-manager.users.jules = import ./homer/home/jules.nix;
+                    home-manager.users.jules = import ./users/jules.nix;
                 }
             ];
         };
@@ -53,12 +59,26 @@
                 ./marge/network.nix
                 ./marge/keymap.nix
                 ./marge/users.nix
-                ./marge/services.nix
-                ./marge/programs.nix
+                ./marge/video-driver.nix
+                ./xserver.nix
+                ./printing.nix
+                ./ssh.nix
+                ./kde.nix
+                ./gnome.nix
+                ./avahi.nix
+                ./neovim.nix
                 ./inputrc.nix
                 ./locales.nix
                 ./sane.nix
                 ./sound.nix
+                ./steam.nix
+                home-manager.nixosModules.home-manager {
+                    home-manager.useGlobalPkgs = true;
+                    home-manager.useUserPackages = true;
+                    home-manager.users.laure = import ./users/laure.nix;
+                    home-manager.users.arthur = import ./users/arthur.nix;
+                    home-manager.users.eloise = import ./users/eloise.nix;
+                }
             ];
         };
     };
