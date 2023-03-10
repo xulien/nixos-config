@@ -4,6 +4,6 @@
     users.users.jules = {
         isNormalUser = true;
         description = "jules";
-        extraGroups = [ "networkmanager" "wheel" "scanner" "lp"];
+        extraGroups = [ "networkmanager" "wheel" "scanner" "lp" "libvirtd"];
     };
 }

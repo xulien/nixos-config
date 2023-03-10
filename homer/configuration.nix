@@ -18,13 +18,14 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-	wget
+    wget
     (steam.override { withJava = true; })
     akonadi
     ffmpeg
-	strace
-	lsof
- 	git
+    strace
+    lsof
+    git
+    virt-manager
   ];
 
   # This value determines the NixOS release from which the default

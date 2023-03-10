@@ -36,12 +36,13 @@
                 ./kde.nix
                 ./gnome.nix
                 ./avahi.nix
-		        ./neovim.nix
+		./neovim.nix
                 ./inputrc.nix
                 ./locales.nix
                 ./sane.nix
                 ./sound.nix
                 ./steam.nix
+                ./virtmanager.nix
                 home-manager.nixosModules.home-manager {
                     home-manager.useGlobalPkgs = true;
                     home-manager.useUserPackages = true;
